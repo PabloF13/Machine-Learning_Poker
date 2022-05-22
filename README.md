@@ -4,7 +4,7 @@
 
 A partir del dataset https://archive.ics.uci.edu/ml/datasets/Poker+Hand vamos a realizar un algoritmo que sea capaz de clasificar las diez manos posibles del poker.
 
-### Dataset
+## Dataset
 
 ![](/pok_images/dataset.png)
 
@@ -16,17 +16,17 @@ Este dataset presenta dos problemas principales. Por un lado, todas las variable
 
 ![](/pok_images/numjugadas.png)
 
-### Modelo utilizado
+## Modelo utilizado
 
 Para enfrentarnos a este problema de clasificación vamos a utilizar una red neuronal de dos capas ocultas con cien neuronas y apenas diez epochs. A pesar de ser un modelo relativamente sencillo funciona realmente bien.
 
-### Transformaciones lineales del dataset
+## Transformaciones lineales del dataset
 
 Sin embargo, antes es necesario realizar varias transformaciones del dataset u obtendremos los pésimos resultados al clasificar que se muestran en la siguiente matriz de confusión:
 
 ![](/pok_images/matriz.png)
 
-#### Primera transformación
+### Primera transformación
 
 ![](/pok_images/primera.png)
 
@@ -38,7 +38,7 @@ Como podemos observar en la matriz de confusión, la clasificación del modelo h
 
 ![](/pok_images/matrizdos.png)
 
-#### Segunda transformación
+### Segunda transformación
 
 A continuación, sustituimos todas las columnas que hacen referencia al palo de las cartas por una única columna que valdrá 1 si todas las cartas de la mano son del mismo palo y 0 si no lo son.
 
